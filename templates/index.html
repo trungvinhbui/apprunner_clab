@@ -1,0 +1,46 @@
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title> Demo App </title>
+	<script src="https://cdn.tailwindcss.com"></script>
+	<style>
+		body {
+			position: relative;
+		}
+
+		body {
+			content: "";
+			position: absolute;
+			top: 0;
+			left: 0;
+			right: 0;
+			bottom: 0;
+			background-image: url(https://images.unsplash.com/photo-1622737133809-d95047b9e673?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2832&q=80);
+			background-repeat: no-repeat;
+			background-size: cover;
+		}
+
+		.message-container {
+			width: 100%;
+			position: absolute;
+			margin-top: 280px;
+		}
+	</style>
+</head>
+
+<body class="bg-black font-mono overflow-scroll">
+	<div class="relative text-white min-h-screen">
+		<div class="message-container"
+			class="flex flex-col justify-center items-center">
+			<div class="text-center" style="color: lightyellow;opacity: 1;font-family: fantasy;">
+				<div class="text-5xl font-black m-2 mt-8">Congratulations {{username}}!</div>
+				<div class="text-2xl m-2">Your app has been deployed using AWS App Runner!</div>
+			</div>
+		</div>
+
+	</div>
+
+</body>
+
+</html>
