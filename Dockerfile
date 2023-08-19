@@ -5,5 +5,5 @@ WORKDIR /python-docker
 COPY . .
 RUN pip3 install -r requirements.txt 
 
-EXPOSE 3000
+EXPOSE 5000
 CMD [ "python3", "application.py" ]
